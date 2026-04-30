@@ -140,7 +140,7 @@ function love.load(args)
     local imageData = love.image.newImageData(sampleFileName)
     image = love.graphics.newImage(imageData)
     -- Run dithering pipeline
-    --   · ratio=6: Process at 1/6th resolution (1/36th pixels) for speed
+    --   · ratio=n: Process at 1/nth resolution (1/(n^2)th pixels) for speed
     --   · upscale=true: Stretch result back to original dimensions for comparison
     dithered = ditheredImage(imageData, palBytes, {ratio=4, upscale=true})
     
