@@ -110,7 +110,7 @@ end
 --         tri-tone mode: use 2×2 spatial pattern with colours[1..4]
 function algorithm.deviseBestMixingPlan(bytesArray, r, g, b)
     -- Track the best solution found so far
-    local bestColors = {1, 1}  -- Default: use palette index 1 twice (solid colour)
+    local bestColours = {1, 1}  -- Default: use palette index 1 twice (solid colour)
     local bestRatio = 0.5      -- Default: 50/50 mix
     local leastPenalty = 1e99  -- Start with "infinite" error
     
@@ -161,7 +161,7 @@ function algorithm.deviseBestMixingPlan(bytesArray, r, g, b)
             -- Keep this plan if it's better than anything seen so far
             if penalty < leastPenalty then
                 leastPenalty = penalty
-                bestColors = {i1, i2}  -- Store palette indices (1-based)
+                bestColours = {i1, i2}  -- Store palette indices (1-based)
                 bestRatio = normRatio  -- Store normalised ratio [0,1]
             end
             
@@ -198,7 +198,7 @@ function algorithm.deviseBestMixingPlan(bytesArray, r, g, b)
                             leastPenalty = penaltyT
                             -- Store 2×2 layout indices (row-major order):
                             -- [0][0]=i3, [0][1]=i1, [1][0]=i2, [1][1]=i3
-                            bestColors = {i3, i1, i2, i3}
+                            bestColours = {i3, i1, i2, i3}
                             bestRatio = 4  -- Special flag: signals tri-tone mode to renderer
                         end
                     end
@@ -208,7 +208,7 @@ function algorithm.deviseBestMixingPlan(bytesArray, r, g, b)
     end
     
     -- Return the optimal plan for this pixel
-    return {colours=bestColors, ratio=bestRatio}
+    return {colours=bestColours, ratio=bestRatio}
 end
 
 -- Export the module
