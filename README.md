@@ -25,13 +25,13 @@ The program includes two default palettes: `c64palette.lua` and `pico8palette.lu
 
 ## Examples
 
-> ![](https://images2.imgbox.com/09/49/z5Bq6EZO_o.png)
+> ![](https://images2.imgbox.com/34/79/E1ZsmCff_o.png)
 > 
 > **Exhibit A:** `furina.png`, dithered at full resolution.
 
-> ![](https://images2.imgbox.com/d8/b8/gvhtMWCj_o.png)
+> ![](https://images2.imgbox.com/a8/f2/mJGhVazk_o.png)
 > 
-> **Exhibit B:** `furina.png`, downscaled to 1/4 resolution, dithered, then upscaled back.
+> **Exhibit B:** `furina.png`, downscaled to 1/2 resolution, dithered, then upscaled back.
 
 > | ![](https://images2.imgbox.com/39/d6/gpO6VZfG_o.png) | ![](https://images2.imgbox.com/80/11/FtM3J0nf_o.png) | ![](https://images2.imgbox.com/9c/6c/aPr3f8b6_o.png) |
 > | - | - | - |
