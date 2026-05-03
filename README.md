@@ -17,7 +17,7 @@ To launch the application, run:
 love . [filename]
 ```
 
-By default, if no specific file is provided, the program looks for `Lenna.png` in the same folder as this `README`.
+By default, if no specific file is provided, the program looks for `furina.png` in the same folder as this `README`.
 
 ## Palettes
 
@@ -27,11 +27,11 @@ The program includes two default palettes: `c64palette.lua` and `pico8palette.lu
 
 > ![](https://images2.imgbox.com/09/49/z5Bq6EZO_o.png)
 > 
-> **Exhibit A:** `Lenna.png`, dithered at full resolution.
+> **Exhibit A:** `furina.png`, dithered at full resolution.
 
 > ![](https://images2.imgbox.com/d8/b8/gvhtMWCj_o.png)
 > 
-> **Exhibit B:** `Lenna.png`, downscaled to 1/4 resolution, dithered, then upscaled back.
+> **Exhibit B:** `furina.png`, downscaled to 1/4 resolution, dithered, then upscaled back.
 
 > | ![](https://images2.imgbox.com/39/d6/gpO6VZfG_o.png) | ![](https://images2.imgbox.com/80/11/FtM3J0nf_o.png) | ![](https://images2.imgbox.com/9c/6c/aPr3f8b6_o.png) |
 > | - | - | - |
