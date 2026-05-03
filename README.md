@@ -21,7 +21,13 @@ By default, if no specific file is provided, the program looks for `furina.png` 
 
 ## Palettes
 
-The program includes two default palettes: `c64palette.lua` and `pico8palette.lua`. I added the C64 palette because that scheme evokes the unique character of the original hardware, despite being a bit dull; whereas the PICO-8 selection is visually superior. I plan to expand with more palettes and increased colour depth in later versions.
+The program includes these default palettes:
+
+* `c64palette.lua`
+* `pico8palette.lua`
+* `cgapalette.lua`
+
+I added the C64 palette because that scheme evokes the unique character of the original hardware, despite being a bit dull; whereas the PICO-8 selection is visually superior. I plan to expand with more palettes and increased colour depth in later versions.
 
 ## Examples
 
