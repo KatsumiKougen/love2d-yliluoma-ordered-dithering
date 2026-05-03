@@ -131,8 +131,8 @@ end
 -- Called once at startup.
 -- Loads assets and precomputes the dithered image.
 function love.load(args)
-    -- Use first CLI argument as image path, fallback to "Lenna.png"
-    local sampleFileName = args[1] or "Lenna.png"
+    -- Use first CLI argument as image path, fallback to "furina.png"
+    local sampleFileName = args[1] or "furina.png"
     
     love.window.setTitle("Loading...")
     
