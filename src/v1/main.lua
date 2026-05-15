@@ -32,7 +32,7 @@ local thresholdMap = {
 -- The external file should return a table with a `palette` key containing an array
 -- of {r, g, b} triplets in normalised [0, 1] float format.
 -- This separation keeps the main script clean and allows easy palette swapping.
-local palette = require("pico8palette").palette
+local palette = require("c64palette").palette
 -- Generate a parallel [0, 255] integer version of the palette for `algorithm.lua`.
 local palBytes = {}
 for i, c in ipairs(palette) do
@@ -142,7 +142,7 @@ function love.load(args)
     -- Run dithering pipeline
     --   · ratio=n: Process at 1/nth resolution (1/(n^2)th pixels) for speed
     --   · upscale=true: Stretch result back to original dimensions for comparison
-    dithered = ditheredImage(imageData, palBytes, {ratio=4, upscale=true})
+    dithered = ditheredImage(imageData, palBytes, {ratio=2, upscale=true})
     
     -- Resize window to exactly match the source image dimensions
     love.window.setMode(image:getDimensions())
