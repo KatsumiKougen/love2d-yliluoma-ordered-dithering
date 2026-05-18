@@ -17,8 +17,7 @@ local current = 1
 -- The external file should return a table with a `palette` key containing an array
 -- of {r, g, b} triplets in normalised [0, 1] float format.
 -- This separation keeps the main script clean and allows easy palette swapping.
-local palette = require("cgapalette").palette
--- Generate a parallel [0, 255] integer version of the palette for `algorithm.lua`.
+local palette = require("pico8palette").palette
 
 -- Called once at startup.
 -- Loads assets and precomputes the dithered image.
@@ -42,7 +41,7 @@ end
 
 -- Called every frame to draw the screen.
 function love.draw()
-    love.window.setTitle("Yliluoma's ordered dithering algorithm in LÖVE")
+    love.window.setTitle("Yliluoma's ordered dithering algorithm in LÖVE — Version 2")
     
     -- Toggle between original and dithered image
     if current == 1 then
