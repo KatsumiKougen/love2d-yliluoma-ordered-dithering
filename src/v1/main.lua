@@ -32,7 +32,7 @@ local thresholdMap = {
 -- The external file should return a table with a `palette` key containing an array
 -- of {r, g, b} triplets in normalised [0, 1] float format.
 -- This separation keeps the main script clean and allows easy palette swapping.
-local palette = require("c64palette").palette
+local palette = require("pico8palette").palette
 -- Generate a parallel [0, 255] integer version of the palette for `algorithm.lua`.
 local palBytes = {}
 for i, c in ipairs(palette) do
