@@ -118,9 +118,9 @@ function algorithm.deviseBestMixingPlan(bytesArray, r, g, b)
     
     -- Iterate over all unique pairs of palette colours (i1 ≤ i2 to avoid duplicates)
     for i1 = 1, 16 do
-        local c1 = bytesArray[i1]
-        local r1, g1, b1 = c1[1], c1[2], c1[3]
         for i2 = i1, 16 do
+            local c1 = bytesArray[i1]
+            local r1, g1, b1 = c1[1], c1[2], c1[3]
             local c2 = bytesArray[i2]
             local r2, g2, b2 = c2[1], c2[2], c2[3]
             -- Start with default 50/50 ratio (32/64)
