@@ -178,9 +178,9 @@ function algorithm.deviseBestMixingPlan(bytesArray, r, g, b)
                         -- Compute mixed colour for fixed 2×2 layout:
                         --   [c3][c1] → 50% c3, 25% c1, 25% c2
                         --   [c2][c3]
-                        tr = (r1 + r2 + r3 * 2) / 4
-                        tg = (g1 + g2 + g3 * 2) / 4
-                        tb = (b1 + b2 + b3 * 2) / 4
+                        local tr = (r1 + r2 + r3 * 2) / 4
+                        local tg = (g1 + g2 + g3 * 2) / 4
+                        local tb = (b1 + b2 + b3 * 2) / 4
                         
                         -- Evaluate tri-tone penalty:
                         --   · Main term: how well the 4-pixel average matches targe
