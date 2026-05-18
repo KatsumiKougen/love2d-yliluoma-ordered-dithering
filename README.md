@@ -31,11 +31,11 @@ I added the C64 palette because that scheme evokes the unique character of the o
 
 ## Examples
 
-> ![](https://images2.imgbox.com/34/79/E1ZsmCff_o.png)
+> ![](https://images2.imgbox.com/50/2f/WqpwXh4M_o.png)
 > 
 > **Exhibit A:** `furina.png`, dithered at full resolution.
 
-> ![](https://images2.imgbox.com/a8/f2/mJGhVazk_o.png)
+> ![](https://images2.imgbox.com/66/7c/mib1v7e1_o.png)
 > 
 > **Exhibit B:** `furina.png`, downscaled to 1/2 resolution, dithered, then upscaled back.
 
